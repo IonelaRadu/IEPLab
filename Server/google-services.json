@@ -1,0 +1,86 @@
+{
+  "project_info": {
+    "project_number": "989365360516",
+    "firebase_url": "https://smartwallet-c767f.firebaseio.com",
+    "project_id": "smartwallet-c767f",
+    "storage_bucket": "smartwallet-c767f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:989365360516:android:b004260e5ec10947",
+        "android_client_info": {
+          "package_name": "smartwallet.cti.upt.com.smartwallet_1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "989365360516-amc6bf0acrkde7nlgfrmusit90i7qktr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD70XWWVCgVGlFy3r1PD0tCzG5bAMyM9_I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:989365360516:android:704f3dec2db61b55",
+        "android_client_info": {
+          "package_name": "com.upt.cti.smartwallet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "989365360516-qp6j6rj2fl2rkqsmo9saqcfbtjogrri6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.upt.cti.smartwallet",
+            "certificate_hash": "e83b0ad1c97ca5eb01d84d6423344fa9906bb89f"
+          }
+        },
+        {
+          "client_id": "989365360516-amc6bf0acrkde7nlgfrmusit90i7qktr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD70XWWVCgVGlFy3r1PD0tCzG5bAMyM9_I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "989365360516-amc6bf0acrkde7nlgfrmusit90i7qktr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

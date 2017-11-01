@@ -13,8 +13,10 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp\
+       bcm2835_stub.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h\
+            bcm2835.h
 
 FORMS    += mainwindow.ui
