@@ -4,31 +4,20 @@
 #include <stdio.h>
 #include<pin.h>
 #include<pwm.h>
-
-#define PIN RPI_GPIO_P1_12 //led
-#define BUTTON RPI_GPIO_P1_15 // button
-
-#define RANGE 1024
+#include<serial.h>
+#include<spi.h>
+#include<stdint.h>
 
 int main(int argc, char **argv)
 {
      bcm2835_set_debug(1);
 
-     Pin *pin= new Pin(PIN ,1,0);
-      PWM  *pwm = new PWM(1024,1);
+     spi *S=new spi(BCM2835_SPI_BIT_ORDER_MSBFIRST,BCM2835_SPI_MODE0,BCM2835_SPI_CLOCK_DIVIDER_65536,BCM2835_SPI_CS0,LOW);
+     uint8_t send_data = 0x23;
 
- while(1)
- {
-    if(pin->get()==1)
-    {
-        pwm->set_duty(pwm->get_duty()+5);
-    }
 
-    if(pwm->get_duty()==100)
-    {
-        pwm->set_duty(0);
-    }
-}
+
+     printf("Sent to SPI: 0x%02X. Read back from SPI: 0x%02X.\n", send_data, S->transfer_data(send_data));
 
     return 0;
 }
